@@ -193,18 +193,17 @@ Bu projeyi yıldızlayan, fork yapan ve katkıda bulunan herkese teşekkürler!
 ## 🔗 Bağlantılar
 
 - 📚 [Laravel Dokümantasyonu](https://laravel.com/docs)
-- 🌐 [Proje Web Sitesi](https://yourdomain.com)
 - 💬 [Discussions](https://github.com/isousluer/laravel-deployment-scripts/discussions)
 - 🐦 [Twitter](https://twitter.com/isousluer)
 
 ## 📧 İletişim
 
-Sorularınız mı var? [Email gönderin](mailto:your@email.com)
+Sorularınız mı var? [Email gönderin](mailto:ismail@usluer.net)
 
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/isousluer">Your Name</a>
+  Made with ❤️ by <a href="https://github.com/isousluer">İsmail Usluer</a>
 </p>
 
 <p align="center">

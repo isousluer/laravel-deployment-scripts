@@ -1,0 +1,30 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+vendor/
+composer.lock
+.phpunit.result.cache
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+*.bak
+*.cache
+
+# Deployment scripts (if accidentally added to public)
+public/install.php
+public/update.php
+public/clear-cache.php
+public/refresh-cache.php
+public/install.lock
