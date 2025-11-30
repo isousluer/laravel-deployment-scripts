@@ -167,7 +167,7 @@ php artisan cache:clear
 - Use emojis
 - Make lists
 - Provide examples
-```
+
 
 ## 📝 Commit Messages
 
