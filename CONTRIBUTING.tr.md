@@ -151,7 +151,9 @@ try {
 
 ### Dokümantasyon Stili
 
-```markdown
+````markdown
+### Dokümantasyon Stili
+
 ## 📝 Başlık
 
 Açıklama metni net ve anlaşılır olmalı.
@@ -168,20 +170,20 @@ php artisan cache:clear
 - Listeler yapın
 - Örnekler verin
 
-
 ## 📝 Commit Mesajları
 
 [Conventional Commits](https://www.conventionalcommits.org/) standardını kullanıyoruz.
 
 ### Format
-
-```
+````
 <type>(<scope>): <subject>
 
 <body>
 
 <footer>
-```
+`````
+``````
+
 
 ### Tipler
 

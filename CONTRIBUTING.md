@@ -151,7 +151,7 @@ try {
 
 ### Documentation Style
 
-```markdown
+````markdown
 ## 📝 Heading
 
 Description text should be clear and understandable.
@@ -168,20 +168,20 @@ php artisan cache:clear
 - Make lists
 - Provide examples
 
-
 ## 📝 Commit Messages
 
 We use [Conventional Commits](https://www.conventionalcommits.org/) standard.
 
 ### Format
 
-```
+````
 <type>(<scope>): <subject>
 
 <body>
 
 <footer>
-```
+`````
+``````
 
 ### Types
 
