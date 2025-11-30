@@ -21,10 +21,10 @@ Ready-to-use scripts to deploy your Laravel projects fast, secure, and professio
 
 | Script | Purpose | Environment | Documentation |
 |--------|---------|-------------|---------------|
-| **install.php** | Initial setup (key, storage, migration) | New Project | [📖 Details](docs/install.md) |
-| **update.php** | Update + Migration | Production Deploy | [📖 Details](docs/update.md) |
-| **clear-cache.php** | Cache clearing | Development | [📖 Details](docs/clear-cache.md) |
-| **refresh-cache.php** | Cache refresh | Production | [📖 Details](docs/refresh-cache.md) |
+| **install.php** | Initial setup (key, storage, migration) | New Project | [📖 Details](docs/INSTALL.md) |
+| **update.php** | Update + Migration | Production Deploy | [📖 Details](docs/UPDATE.md) |
+| **clear-cache.php** | Cache clearing | Development | [📖 Details](docs/CLEAR_CACHE.md) |
+| **refresh-cache.php** | Cache refresh | Production | [📖 Details](docs/REFRESH_CACHE.md) |
 
 ## 🚀 Quick Start
 

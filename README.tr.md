@@ -21,10 +21,10 @@ Laravel projelerinizi hızlı, güvenli ve profesyonel şekilde deploy etmek iç
 
 | Script | Amaç | Ortam | Dokümantasyon |
 |--------|------|-------|---------------|
-| **install.php** | İlk kurulum (key, storage, migration) | Yeni Proje | [📖 Detaylar](docs/install.md) |
-| **update.php** | Güncelleme + Migration | Production Deploy | [📖 Detaylar](docs/update.md) |
-| **clear-cache.php** | Cache temizleme | Development | [📖 Detaylar](docs/clear-cache.md) |
-| **refresh-cache.php** | Cache yenileme | Production | [📖 Detaylar](docs/refresh-cache.md) |
+| **install.php** | İlk kurulum (key, storage, migration) | Yeni Proje | [📖 Detaylar](docs/INSTALL.tr.md) |
+| **update.php** | Güncelleme + Migration | Production Deploy | [📖 Detaylar](docs/UPDATE.tr.md) |
+| **clear-cache.php** | Cache temizleme | Development | [📖 Detaylar](docs/CLEAR_CACHE.tr.md) |
+| **refresh-cache.php** | Cache yenileme | Production | [📖 Detaylar](docs/REFRESH_CACHE.tr.md) |
 
 ## 🚀 Hızlı Başlangıç
 
