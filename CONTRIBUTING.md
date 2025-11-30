@@ -1,177 +1,177 @@
-# 🤝 Katkıda Bulunma Rehberi
+# 🤝 Contributing Guide
 
-Laravel Deployment Scripts projesine katkıda bulunmayı düşündüğünüz için teşekkürler! 
+Thank you for considering contributing to Laravel Deployment Scripts! 
 
-## 📋 İçindekiler
+## 📋 Table of Contents
 
-- [Davranış Kuralları](#-davranış-kuralları)
-- [Nasıl Katkıda Bulunabilirim?](#-nasıl-katkıda-bulunabilirim)
-- [Geliştirme Süreci](#-geliştirme-süreci)
-- [Kod Standartları](#-kod-standartları)
-- [Commit Mesajları](#-commit-mesajları)
-- [Pull Request Süreci](#-pull-request-süreci)
-- [Issue Raporlama](#-issue-raporlama)
+- [Code of Conduct](#-code-of-conduct)
+- [How Can I Contribute?](#-how-can-i-contribute)
+- [Development Process](#-development-process)
+- [Code Standards](#-code-standards)
+- [Commit Messages](#-commit-messages)
+- [Pull Request Process](#-pull-request-process)
+- [Issue Reporting](#-issue-reporting)
 
-## 📜 Davranış Kuralları
+## 📜 Code of Conduct
 
-Bu proje ve topluluk, herkes için açık ve misafirperver bir ortam sağlamayı taahhüt eder.
+This project and community are committed to providing an open and welcoming environment for everyone.
 
-### Beklentilerimiz
+### Our Expectations
 
-✅ **Olumlu Davranışlar:**
-- Saygılı ve yapıcı dil kullanın
-- Farklı görüşlere açık olun
-- Yapıcı eleştiri kabul edin
-- Topluluk yararına odaklanın
-- Diğer katkı sağlayıcılara empati gösterin
+✅ **Positive Behaviors:**
+- Use respectful and constructive language
+- Be open to different opinions
+- Accept constructive criticism
+- Focus on community benefit
+- Show empathy to other contributors
 
-❌ **Kabul Edilemez Davranışlar:**
-- Taciz veya hakaret içeren dil
-- Trolling veya kışkırtıcı yorumlar
-- Kişisel veya politik saldırılar
-- Başkalarının özel bilgilerini paylaşma
+❌ **Unacceptable Behaviors:**
+- Harassment or insulting language
+- Trolling or provocative comments
+- Personal or political attacks
+- Sharing others' private information
 
-## 💡 Nasıl Katkıda Bulunabilirim?
+## 💡 How Can I Contribute?
 
-Katkıda bulunmanın birçok yolu var:
+There are many ways to contribute:
 
-### 1. 🐛 Bug Bildirimi
-Hata mı buldunuz? [Issue açın](https://github.com/isousluer/laravel-deployment-scripts/issues/new?template=bug_report.md)!
+### 1. 🐛 Bug Reports
+Found a bug? [Open an issue](https://github.com/isousluer/laravel-deployment-scripts/issues/new?template=bug_report.md)!
 
-### 2. 💡 Özellik Önerisi
-Yeni bir fikriniz mi var? [Feature Request açın](https://github.com/isousluer/laravel-deployment-scripts/issues/new?template=feature_request.md)!
+### 2. 💡 Feature Suggestions
+Have a new idea? [Open a Feature Request](https://github.com/isousluer/laravel-deployment-scripts/issues/new?template=feature_request.md)!
 
-### 3. 📝 Dokümantasyon
-Dokümantasyonu geliştirin:
-- Yazım hatalarını düzeltin
-- Örnekler ekleyin
-- Açıklamaları netleştirin
-- Çeviriler ekleyin
+### 3. 📝 Documentation
+Improve documentation:
+- Fix typos
+- Add examples
+- Clarify explanations
+- Add translations
 
-### 4. 💻 Kod Katkısı
-- Mevcut issue'ları çözün
-- Yeni özellikler ekleyin
-- Performans iyileştirmeleri yapın
-- Test kapsamını artırın
+### 4. 💻 Code Contributions
+- Solve existing issues
+- Add new features
+- Make performance improvements
+- Increase test coverage
 
-### 5. ⭐ Projeyi Destekleyin
-- GitHub'da yıldız verin
-- Sosyal medyada paylaşın
-- Blog yazısı yazın
-- Başkalarına önerin
+### 5. ⭐ Support the Project
+- Star on GitHub
+- Share on social media
+- Write blog posts
+- Recommend to others
 
-## 🔨 Geliştirme Süreci
+## 🔨 Development Process
 
-### 1. Repository'yi Fork Edin
+### 1. Fork the Repository
 
 ```bash
-# GitHub'da Fork butonuna tıklayın
-# Sonra klonlayın
+# Click Fork button on GitHub
+# Then clone
 git clone https://github.com/isousluer/laravel-deployment-scripts.git
 cd laravel-deployment-scripts
 ```
 
-### 2. Branch Oluşturun
+### 2. Create a Branch
 
 ```bash
-# Feature için
+# For features
 git checkout -b feature/amazing-feature
 
-# Bug fix için
+# For bug fixes
 git checkout -b fix/bug-description
 
-# Dokümantasyon için
+# For documentation
 git checkout -b docs/improvement
 ```
 
-### 3. Değişikliklerinizi Yapın
+### 3. Make Your Changes
 
 ```bash
-# Dosyaları düzenleyin
+# Edit files
 nano scripts/install.php
 
-# Test edin
-# (Laravel test ortamında çalıştırın)
+# Test
+# (Run in Laravel test environment)
 ```
 
-### 4. Commit Yapın
+### 4. Commit
 
 ```bash
 git add .
 git commit -m "feat: add amazing feature"
 ```
 
-### 5. Push Edin
+### 5. Push
 
 ```bash
 git push origin feature/amazing-feature
 ```
 
-### 6. Pull Request Açın
+### 6. Open Pull Request
 
-GitHub'da "Compare & pull request" butonuna tıklayın.
+Click "Compare & pull request" button on GitHub.
 
-## 📏 Kod Standartları
+## 📏 Code Standards
 
-### PHP Kod Stili
+### PHP Code Style
 
 ```php
 <?php
 /**
- * Dosya açıklaması
- * Kısa ve net olmalı
+ * File description
+ * Should be short and clear
  */
 
-// İyi havalandırılmış kod
-echo "🚀 <span class='step'>ADIM BAŞLIYOR...</span>\n";
+// Well-spaced code
+echo "🚀 <span class='step'>STEP STARTING...</span>\n";
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n";
 
-// Açıklayıcı değişken isimleri
+// Descriptive variable names
 $kernel->call('cache:clear');
-echo "   ✅ Cache başarıyla temizlendi\n\n";
+echo "   ✅ Cache cleared successfully\n\n";
 
-// Try-catch ile hata yönetimi
+// Error handling with try-catch
 try {
     $kernel->call('event:clear');
-    echo "   ✅ Event cache temizlendi\n\n";
+    echo "   ✅ Event cache cleared\n\n";
 } catch (Exception $e) {
-    echo "   ⚠️  Event cache komutu bulunamadı\n\n";
+    echo "   ⚠️  Event cache command not found\n\n";
 }
 ```
 
-### HTML/CSS Stili
+### HTML/CSS Style
 
 ```css
-/* Tutarlı renk paleti */
+/* Consistent color palette */
 .success { color: #4CAF50; font-weight: bold; }
 .warning { color: #ff9800; font-weight: bold; }
 .error { color: #f44336; font-weight: bold; }
 .step { color: #2196F3; font-weight: bold; }
 ```
 
-### Dokümantasyon Stili
+### Documentation Style
 
 ```markdown
-## 📝 Başlık
+## 📝 Heading
 
-Açıklama metni net ve anlaşılır olmalı.
+Description text should be clear and understandable.
 
-### Kod Örnekleri
+### Code Examples
 
 ```bash
-# Her komut için açıklama
+# Description for each command
 php artisan cache:clear
 ```
 
-✅ **İyi Pratikler:**
-- Emoji kullanın
-- Listeler yapın
-- Örnekler verin
+✅ **Good Practices:**
+- Use emojis
+- Make lists
+- Provide examples
 ```
 
-## 📝 Commit Mesajları
+## 📝 Commit Messages
 
-[Conventional Commits](https://www.conventionalcommits.org/) standardını kullanıyoruz.
+We use [Conventional Commits](https://www.conventionalcommits.org/) standard.
 
 ### Format
 
@@ -183,33 +183,33 @@ php artisan cache:clear
 <footer>
 ```
 
-### Tipler
+### Types
 
-- `feat:` Yeni özellik
-- `fix:` Bug düzeltmesi
-- `docs:` Dokümantasyon
-- `style:` Formatlama
-- `refactor:` Kod yeniden yapılandırma
-- `perf:` Performans iyileştirmesi
-- `test:` Test ekleme/düzeltme
-- `chore:` Bakım işleri
+- `feat:` New feature
+- `fix:` Bug fix
+- `docs:` Documentation
+- `style:` Formatting
+- `refactor:` Code restructuring
+- `perf:` Performance improvement
+- `test:` Adding/fixing tests
+- `chore:` Maintenance tasks
 
-### Örnekler
+### Examples
 
 ```bash
-# İyi örnekler
+# Good examples
 feat(install): add storage link creation
 fix(cache): resolve permission denied error
 docs(readme): update installation steps
 style(scripts): improve HTML output formatting
 
-# Kötü örnekler
+# Bad examples
 ❌ "fixed stuff"
 ❌ "update"
 ❌ "asdasd"
 ```
 
-### Detaylı Örnek
+### Detailed Example
 
 ```
 feat(refresh): add event cache support
@@ -222,35 +222,35 @@ feat(refresh): add event cache support
 Closes #123
 ```
 
-## 🎯 Pull Request Süreci
+## 🎯 Pull Request Process
 
 ### PR Checklist
 
-PR açmadan önce kontrol edin:
+Check before opening PR:
 
-- [ ] Kod PHP 8.0+ ile uyumlu
-- [ ] Laravel 9.0+ ile uyumlu
-- [ ] HTML çıktısı düzgün formatlanmış
-- [ ] Hata yönetimi mevcut
-- [ ] Dokümantasyon güncellenmiş
-- [ ] Commit mesajları standartlara uygun
-- [ ] Conflict yok
+- [ ] Code compatible with PHP 8.0+
+- [ ] Compatible with Laravel 9.0+
+- [ ] HTML output properly formatted
+- [ ] Error handling present
+- [ ] Documentation updated
+- [ ] Commit messages follow standards
+- [ ] No conflicts
 
-### PR Şablonu
+### PR Template
 
 ```markdown
-## 📝 Değişiklik Özeti
+## 📝 Change Summary
 
-Kısa açıklama
+Brief description
 
-## 🎯 Değişiklik Tipi
+## 🎯 Change Type
 
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Breaking change
 - [ ] Documentation update
 
-## 🧪 Test Edildi mi?
+## 🧪 Tested?
 
 - [ ] PHP 8.0
 - [ ] PHP 8.1
@@ -259,94 +259,94 @@ Kısa açıklama
 - [ ] Laravel 10
 - [ ] Laravel 11
 
-## 📸 Ekran Görüntüleri
+## 📸 Screenshots
 
-(Varsa ekleyin)
+(Add if available)
 
-## 📋 İlgili Issue
+## 📋 Related Issue
 
 Fixes #123
 
 ## ✅ Checklist
 
-- [ ] Kod standartlarına uygun
-- [ ] Dokümantasyon güncellendi
-- [ ] Test edildi
+- [ ] Follows code standards
+- [ ] Documentation updated
+- [ ] Tested
 ```
 
-### Review Süreci
+### Review Process
 
-1. ✅ Automated checks geçmeli
-2. 👀 En az 1 maintainer review almalı
-3. 💬 Feedback'lere cevap verilmeli
-4. ✅ Tüm conversation'lar resolved olmalı
+1. ✅ Automated checks must pass
+2. 👀 At least 1 maintainer review required
+3. 💬 Respond to feedback
+4. ✅ All conversations must be resolved
 5. 🎉 Merge!
 
-## 🐛 Issue Raporlama
+## 🐛 Issue Reporting
 
-### Bug Report Şablonu
+### Bug Report Template
 
 ```markdown
-## 🐛 Bug Açıklaması
+## 🐛 Bug Description
 
-Açık ve net bug açıklaması
+Clear and concise bug description
 
-## 📋 Adımlar
+## 📋 Steps to Reproduce
 
-1. 'X'e git
-2. 'Y'ye tıkla
-3. Aşağı kaydır
-4. Hatayı gör
+1. Go to 'X'
+2. Click on 'Y'
+3. Scroll down
+4. See error
 
-## ✅ Beklenen Davranış
+## ✅ Expected Behavior
 
-Ne olmasını bekliyordunuz
+What did you expect to happen
 
-## ❌ Gerçekleşen Davranış
+## ❌ Actual Behavior
 
-Ne oldu
+What happened
 
-## 📸 Ekran Görüntüleri
+## 📸 Screenshots
 
-(Varsa ekleyin)
+(Add if available)
 
-## 🖥️ Ortam
+## 🖥️ Environment
 
-- OS: [örn. Ubuntu 22.04]
-- PHP Version: [örn. 8.2]
-- Laravel Version: [örn. 10.0]
-- Web Server: [örn. Nginx 1.22]
+- OS: [e.g. Ubuntu 22.04]
+- PHP Version: [e.g. 8.2]
+- Laravel Version: [e.g. 10.0]
+- Web Server: [e.g. Nginx 1.22]
 
-## 📝 Ek Bilgiler
+## 📝 Additional Information
 
-Başka bir şey eklemek ister misiniz?
+Anything else you want to add?
 ```
 
-### Feature Request Şablonu
+### Feature Request Template
 
 ```markdown
-## 💡 Özellik Açıklaması
+## 💡 Feature Description
 
-Net ve özlü açıklama
+Clear and concise description
 
 ## 🎯 Problem
 
-Hangi problemi çözüyor?
+What problem does it solve?
 
-## 💭 Önerilen Çözüm
+## 💭 Proposed Solution
 
-Nasıl çözülmeli?
+How should it be solved?
 
-## 🔄 Alternatifler
+## 🔄 Alternatives
 
-Başka çözümler düşündünüz mü?
+Have you considered other solutions?
 
-## 📝 Ek Bilgiler
+## 📝 Additional Information
 
-Başka eklemek istediğiniz bir şey?
+Anything else you want to add?
 ```
 
-## 🏷️ Branch Adlandırma
+## 🏷️ Branch Naming
 
 ```bash
 # Feature
@@ -365,31 +365,31 @@ docs/api-reference
 hotfix/critical-security-issue
 ```
 
-## 🎨 Emoji Kullanımı
+## 🎨 Emoji Usage
 
-README ve commit mesajlarında emoji kullanıyoruz:
+We use emojis in README and commit messages:
 
 - 🚀 Deploy/Release
-- ✨ Yeni özellik
+- ✨ New feature
 - 🐛 Bug fix
-- 📝 Dokümantasyon
-- 🎨 Stil/Formatlama
-- ⚡ Performans
-- 🔒 Güvenlik
+- 📝 Documentation
+- 🎨 Style/Formatting
+- ⚡ Performance
+- 🔒 Security
 - ✅ Test
-- 🔧 Konfigürasyon
-- 🗑️ Silme
+- 🔧 Configuration
+- 🗑️ Removal
 
-## 💬 İletişim
+## 💬 Contact
 
 - 💬 [GitHub Discussions](https://github.com/isousluer/laravel-deployment-scripts/discussions)
 - 🐦 [Twitter](https://twitter.com/isousluer)
 - 📧 [Email](mailto:ismail@usluer.net)
 
-## 🙏 Teşekkürler
+## 🙏 Thanks
 
-Zamanınızı ayırıp katkıda bulunduğunuz için teşekkür ederiz! Her katkı, büyük veya küçük, projeyi daha iyi hale getirir.
+Thank you for taking the time to contribute! Every contribution, big or small, makes this project better.
 
 ---
 
-**Sorunuz mu var?** [Discussion açın](https://github.com/isousluer/laravel-deployment-scripts/discussions/new)!
+**Have questions?** [Open a discussion](https://github.com/isousluer/laravel-deployment-scripts/discussions/new)!

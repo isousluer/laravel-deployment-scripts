@@ -1,94 +1,94 @@
 # Security Policy
 
-## 🔒 Güvenlik Politikası
+## 🔒 Security Policy
 
-Laravel Deployment Scripts projesinin güvenliğini ciddiye alıyoruz.
+We take the security of Laravel Deployment Scripts project seriously.
 
-## 📝 Desteklenen Versiyonlar
+## 📝 Supported Versions
 
-| Versiyon | Destekleniyor |
-| -------- | ------------- |
-| 1.0.x    | ✅            |
-| < 1.0    | ❌            |
+| Version | Supported |
+| ------- | --------- |
+| 1.0.x   | ✅        |
+| < 1.0   | ❌        |
 
-## 🐛 Güvenlik Açığı Bildirimi
+## 🐛 Reporting Security Vulnerabilities
 
-Güvenlik açığı bulduysanız, lütfen **public issue açmayın**.
+If you discover a security vulnerability, please **do not open a public issue**.
 
-### Bildirme Adımları
+### Reporting Steps
 
-1. **Email gönderin**: ismail@usluer.net
-2. **Detay verin**: 
-   - Açığın açıklaması
-   - Etkilenen versiyon
-   - Yeniden üretme adımları
-   - Olası etki
-3. **Yanıt bekleyin**: 48 saat içinde cevap vereceğiz
+1. **Send an email**: ismail@usluer.net
+2. **Provide details**: 
+   - Description of the vulnerability
+   - Affected version
+   - Steps to reproduce
+   - Potential impact
+3. **Wait for response**: We will respond within 48 hours
 
-### Bildirimde Bulunulacaklar
+### What to Include in Report
 ```markdown
-- Güvenlik açığının türü
-- Etkilenen dosya/kod satırları
-- Yeniden üretme adımları
-- Potansiyel etki değerlendirmesi
-- Önerilen çözüm (varsa)
+- Type of security vulnerability
+- Affected file/code lines
+- Steps to reproduce
+- Potential impact assessment
+- Suggested fix (if any)
 ```
 
-## 🛡️ Güvenlik En İyi Uygulamaları
+## 🛡️ Security Best Practices
 
-### Scriptleri Kullanırken
+### When Using Scripts
 
-1. ✅ **Kullanım sonrası silin**
+1. ✅ **Delete after use**
 ```bash
    rm public/install.php
    rm public/update.php
 ```
 
-2. ✅ **Install.lock kontrol edin**
-   - Script tek seferlik çalışır
-   - Kilidi manuel silmeyin
+2. ✅ **Check install.lock**
+   - Script runs only once
+   - Don't manually delete the lock
 
-3. ✅ **.gitignore'a ekleyin**
+3. ✅ **Add to .gitignore**
 ```gitignore
    public/*.php
    public/install.lock
 ```
 
-4. ✅ **Dosya izinlerini kontrol edin**
+4. ✅ **Check file permissions**
 ```bash
    chmod 644 public/*.php
 ```
 
-5. ✅ **HTTPS kullanın**
-   - HTTP üzerinden çalıştırmayın
-   - SSL sertifikası kullanın
+5. ✅ **Use HTTPS**
+   - Don't run over HTTP
+   - Use SSL certificate
 
-6. ✅ **Production'da dikkatli olun**
-   - Maintenance mode açın
-   - Backup alın
-   - Test ortamında deneyin
+6. ✅ **Be careful in production**
+   - Enable maintenance mode
+   - Take backups
+   - Test in staging environment
 
-### .env Güvenliği
+### .env Security
 ```env
-# Hassas bilgileri koruyun
+# Protect sensitive information
 APP_KEY=base64:...
 DB_PASSWORD=...
 
-# Production'da debug kapalı
+# Debug off in production
 APP_DEBUG=false
 APP_ENV=production
 ```
 
-## 🚨 Bilinen Güvenlik Konuları
+## 🚨 Known Security Considerations
 
-### Script Erişimi
-- ⚠️ Scriptler public dizinde çalışır
-- ✅ Kullanım sonrası mutlaka silin
-- ✅ Web sunucu konfigürasyonu yapın
+### Script Access
+- ⚠️ Scripts run in public directory
+- ✅ Always delete after use
+- ✅ Configure web server
 
-### Örnek Nginx Konfigürasyonu
+### Example Nginx Configuration
 ```nginx
-# Deployment scriptlerini engelle
+# Block deployment scripts
 location ~* \.(php)$ {
     if ($request_filename ~* (install|update|clear-cache|refresh-cache)\.php$) {
         return 403;
@@ -96,26 +96,26 @@ location ~* \.(php)$ {
 }
 ```
 
-### Örnek Apache .htaccess
+### Example Apache .htaccess
 ```apache
-# Deployment scriptlerini engelle
+# Block deployment scripts
 <FilesMatch "(install|update|clear-cache|refresh-cache)\.php$">
     Require all denied
 </FilesMatch>
 ```
 
-## 📞 İletişim
+## 📞 Contact
 
 - 📧 Email: ismail@usluer.net
 - 💬 Private disclosure: [GitHub Security Advisory](https://github.com/isousluer/laravel-deployment-scripts/security/advisories/new)
 
 ## 🙏 Hall of Fame
 
-Güvenlik açıklarını sorumlu bir şekilde bildiren araştırmacılar:
+Security researchers who responsibly disclosed vulnerabilities:
 
-- (Henüz yok - ilk siz olun!)
+- (None yet - be the first!)
 
-## 📚 Kaynaklar
+## 📚 Resources
 
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 - [Laravel Security](https://laravel.com/docs/security)
@@ -123,4 +123,4 @@ Güvenlik açıklarını sorumlu bir şekilde bildiren araştırmacılar:
 
 ---
 
-**Güvenlik önceliğimizdir!** Sorumlu açıklama için teşekkürler.
+**Security is our priority!** Thanks for responsible disclosure.

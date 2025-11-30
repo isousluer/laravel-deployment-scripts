@@ -6,105 +6,105 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![GitHub Stars](https://img.shields.io/github/stars/isousluer/laravel-deployment-scripts.svg)](https://github.com/isousluer/laravel-deployment-scripts/stargazers)
 
-Laravel projelerinizi hızlı, güvenli ve profesyonel şekilde deploy etmek için hazır scriptler!
+Ready-to-use scripts to deploy your Laravel projects fast, secure, and professionally!
 
-## ✨ Özellikler
+## ✨ Features
 
-- 🎯 **Tek Tıkla Kurulum** - Karmaşık komutlardan kurtulun
-- 🔒 **Güvenlik Odaklı** - Tek seferlik çalışma kilidi
-- 🎨 **Profesyonel Arayüz** - Renkli HTML çıktısı
-- ⚡ **Performans** - 10-20x hız artışı
-- 🐛 **Hata Yönetimi** - Detaylı hata raporlama
-- 📦 **Bakım Kolay** - Tek dosya, bağımlılık yok
+- 🎯 **One-Click Setup** - Get rid of complex commands
+- 🔒 **Security-Focused** - Single-run lock mechanism
+- 🎨 **Professional Interface** - Colorful HTML output
+- ⚡ **Performance** - 10-20x speed boost
+- 🐛 **Error Handling** - Detailed error reporting
+- 📦 **Easy Maintenance** - Single file, no dependencies
 
-## 📦 Scriptler
+## 📦 Scripts
 
-| Script | Amaç | Ortam | Dokümantasyon |
-|--------|------|-------|---------------|
-| **install.php** | İlk kurulum (key, storage, migration) | Yeni Proje | [📖 Detaylar](docs/install.md) |
-| **update.php** | Güncelleme + Migration | Production Deploy | [📖 Detaylar](docs/update.md) |
-| **clear-cache.php** | Cache temizleme | Development | [📖 Detaylar](docs/clear-cache.md) |
-| **refresh-cache.php** | Cache yenileme | Production | [📖 Detaylar](docs/refresh-cache.md) |
+| Script | Purpose | Environment | Documentation |
+|--------|---------|-------------|---------------|
+| **install.php** | Initial setup (key, storage, migration) | New Project | [📖 Details](docs/install.md) |
+| **update.php** | Update + Migration | Production Deploy | [📖 Details](docs/update.md) |
+| **clear-cache.php** | Cache clearing | Development | [📖 Details](docs/clear-cache.md) |
+| **refresh-cache.php** | Cache refresh | Production | [📖 Details](docs/refresh-cache.md) |
 
-## 🚀 Hızlı Başlangıç
+## 🚀 Quick Start
 
-### 1. İlk Kurulum
+### 1. Initial Installation
 
 ```bash
-# 1. Script'i indirin
+# 1. Download the script
 wget https://raw.githubusercontent.com/isousluer/laravel-deployment-scripts/main/scripts/install.php
 
-# 2. public/ dizinine taşıyın
+# 2. Move to public/ directory
 mv install.php public/
 
-# 3. Tarayıcıdan çalıştırın
+# 3. Run from browser
 https://yourdomain.com/install.php
 
-# 4. Dosyayı silin
+# 4. Delete the file
 rm public/install.php
 ```
 
-### 2. Production Güncelleme
+### 2. Production Update
 
 ```bash
-# Kod güncelleme sonrası
+# After code update
 wget https://raw.githubusercontent.com/isousluer/laravel-deployment-scripts/main/scripts/update.php
 mv update.php public/
 https://yourdomain.com/update.php
 rm public/update.php
 ```
 
-### 3. Cache Yenileme
+### 3. Cache Refresh
 
 ```bash
-# Performans optimizasyonu için
+# For performance optimization
 wget https://raw.githubusercontent.com/isousluer/laravel-deployment-scripts/main/scripts/refresh-cache.php
 mv refresh-cache.php public/
 https://yourdomain.com/refresh-cache.php
 rm public/refresh-cache.php
 ```
 
-## 📖 Detaylı Dokümantasyon
+## 📖 Detailed Documentation
 
-- 📘 [İlk Kurulum Rehberi](docs/install.md)
-- 📗 [Güncelleme Rehberi](docs/update.md)
-- 📙 [Cache Temizleme Rehberi](docs/clear-cache.md)
-- 📕 [Cache Yenileme Rehberi](docs/refresh-cache.md)
+- 📘 [Installation Guide](docs/install.md)
+- 📗 [Update Guide](docs/update.md)
+- 📙 [Cache Clearing Guide](docs/clear-cache.md)
+- 📕 [Cache Refresh Guide](docs/refresh-cache.md)
 
-## 🎯 Kullanım Senaryoları
+## 🎯 Usage Scenarios
 
-### Senaryo 1: Yeni Proje Kurulumu
+### Scenario 1: New Project Setup
 ```bash
 1. Git clone
 2. composer install
-3. .env ayarları
-4. install.php çalıştır  ← Bu script!
+3. .env configuration
+4. Run install.php  ← This script!
 ```
 
-### Senaryo 2: Production Deploy
+### Scenario 2: Production Deploy
 ```bash
 1. git pull
 2. composer install --no-dev
-3. update.php çalıştır  ← Bu script!
+3. Run update.php  ← This script!
 ```
 
-### Senaryo 3: Cache Sorunu
+### Scenario 3: Cache Issues
 ```bash
-1. Config değiştirdin ama çalışmadı?
-2. refresh-cache.php çalıştır  ← Bu script!
+1. Changed config but not working?
+2. Run refresh-cache.php  ← This script!
 ```
 
-## 🔒 Güvenlik
+## 🔒 Security
 
-⚠️ **ÖNEMLİ UYARILAR:**
+⚠️ **IMPORTANT WARNINGS:**
 
-- ✅ Scriptler tek seferlik çalışır (install.lock mekanizması)
-- ✅ Kullanım sonrası mutlaka silin
-- ✅ `.gitignore`'a ekleyin
-- ❌ Production'da bırakmayın
-- ❌ Şifreli bilgi içermez
+- ✅ Scripts run only once (install.lock mechanism)
+- ✅ Delete after use
+- ✅ Add to `.gitignore`
+- ❌ Don't leave in production
+- ❌ Contains no sensitive data
 
-### .gitignore'a Ekleyin
+### Add to .gitignore
 
 ```gitignore
 # Deployment Scripts
@@ -115,90 +115,90 @@ public/refresh-cache.php
 public/install.lock
 ```
 
-## 📊 Performans Karşılaştırması
+## 📊 Performance Comparison
 
-| Durum | Yanıt Süresi | Cache |
-|-------|-------------|-------|
-| ❌ Cache Yok | 150-200ms | Yok |
-| ✅ Cache Var | 10-20ms | Var |
-| **Fark** | **10-20x Hızlı** | **refresh-cache.php** |
+| Status | Response Time | Cache |
+|--------|--------------|-------|
+| ❌ No Cache | 150-200ms | None |
+| ✅ With Cache | 10-20ms | Active |
+| **Difference** | **10-20x Faster** | **refresh-cache.php** |
 
-## 🛠️ Gereksinimler
+## 🛠️ Requirements
 
-- PHP 8.0 veya üzeri
-- Laravel 9.0 veya üzeri
-- Composer bağımlılıkları yüklü
-- Veritabanı bağlantısı aktif
-- Web sunucu (Apache/Nginx)
+- PHP 8.0 or higher
+- Laravel 9.0 or higher
+- Composer dependencies installed
+- Active database connection
+- Web server (Apache/Nginx)
 
-## 💡 En İyi Uygulamalar
+## 💡 Best Practices
 
-### Development Ortamı
+### Development Environment
 ```bash
-# Cache'leri kapatın
+# Disable cache
 CACHE_DRIVER=array
 VIEW_COMPILED_PATH=false
 
-# Gerektiğinde temizleyin
+# Clear when needed
 clear-cache.php
 ```
 
-### Production Ortamı
+### Production Environment
 ```bash
 # Deploy workflow
 1. php artisan down
 2. git pull
 3. composer install --no-dev --optimize-autoloader
-4. update.php veya refresh-cache.php
+4. update.php or refresh-cache.php
 5. php artisan queue:restart
 6. php artisan up
 ```
 
-## 🤝 Katkıda Bulunma
+## 🤝 Contributing
 
-Katkılarınızı bekliyoruz! Lütfen [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını okuyun.
+We welcome your contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md).
 
-### Katkı Süreci
+### Contribution Process
 
-1. 🍴 Fork edin
-2. 🌱 Feature branch oluşturun (`git checkout -b feature/amazing`)
-3. 💾 Commit yapın (`git commit -m 'Add amazing feature'`)
-4. 📤 Push edin (`git push origin feature/amazing`)
-5. 🎉 Pull Request açın
+1. 🍴 Fork it
+2. 🌱 Create feature branch (`git checkout -b feature/amazing`)
+3. 💾 Commit changes (`git commit -m 'Add amazing feature'`)
+4. 📤 Push to branch (`git push origin feature/amazing`)
+5. 🎉 Open Pull Request
 
-## 🐛 Sorun Bildirme
+## 🐛 Report Issues
 
-Sorun mu buldunuz? [Issue açın](https://github.com/isousluer/laravel-deployment-scripts/issues/new)!
+Found a bug? [Open an issue](https://github.com/isousluer/laravel-deployment-scripts/issues/new)!
 
-### Issue Şablonları
+### Issue Templates
 - 🐛 [Bug Report](https://github.com/isousluer/laravel-deployment-scripts/issues/new?template=bug_report.md)
 - 💡 [Feature Request](https://github.com/isousluer/laravel-deployment-scripts/issues/new?template=feature_request.md)
 
 ## 📝 Changelog
 
-Tüm önemli değişiklikler [CHANGELOG.md](CHANGELOG.md) dosyasında belgelenir.
+All notable changes are documented in [CHANGELOG.md](CHANGELOG.md).
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
+This project is licensed under the [MIT License](LICENSE).
 
-## 🌟 Yıldız Geçmişi
+## 🌟 Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=isousluer/laravel-deployment-scripts&type=Date)](https://star-history.com/#isousluer/laravel-deployment-scripts&Date)
 
-## 💖 Teşekkürler
+## 💖 Thanks
 
-Bu projeyi yıldızlayan, fork yapan ve katkıda bulunan herkese teşekkürler!
+Thanks to everyone who starred, forked, and contributed to this project!
 
-## 🔗 Bağlantılar
+## 🔗 Links
 
-- 📚 [Laravel Dokümantasyonu](https://laravel.com/docs)
+- 📚 [Laravel Documentation](https://laravel.com/docs)
 - 💬 [Discussions](https://github.com/isousluer/laravel-deployment-scripts/discussions)
 - 🐦 [Twitter](https://twitter.com/isousluer)
 
-## 📧 İletişim
+## 📧 Contact
 
-Sorularınız mı var? [Email gönderin](mailto:ismail@usluer.net)
+Have questions? [Send an email](mailto:ismail@usluer.net)
 
 ---
 
@@ -207,5 +207,5 @@ Sorularınız mı var? [Email gönderin](mailto:ismail@usluer.net)
 </p>
 
 <p align="center">
-  <a href="#-laravel-deployment-scripts">Başa Dön ⬆️</a>
+  <a href="#-laravel-deployment-scripts">Back to Top ⬆️</a>
 </p>

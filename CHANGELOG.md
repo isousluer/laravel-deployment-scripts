@@ -1,39 +1,39 @@
 # Changelog
 
-Projeye yapılan tüm önemli değişiklikler bu dosyada belgelenir.
+All notable changes to this project will be documented in this file.
 
-Format [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) standardına dayanır ve bu proje [Semantic Versioning](https://semver.org/spec/v2.0.0.html) kullanır.
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-### Planlanıyor
+### Planned
 - Multi-language support (TR, EN, ES, FR)
-- CLI version (command line kullanımı)
+- CLI version (command line usage)
 - Docker support
 - Automated testing suite
 - GitHub Actions integration
 
 ## [1.0.0] - 2024-01-15
 
-### 🎉 İlk Stabil Sürüm
+### 🎉 First Stable Release
 
-Bu sürüm production kullanımı için hazır!
+This version is production-ready!
 
-### ✨ Eklenenler
+### ✨ Added
 
 #### Scripts
-- `install.php` - İlk kurulum scripti
+- `install.php` - Initial installation script
   - Application key generation
   - Storage link creation
   - Database migration
   - Cache optimization
   
-- `update.php` - Güncelleme scripti
+- `update.php` - Update script
   - Old cache cleaning
   - Migration execution
   - New cache creation
   
-- `clear-cache.php` - Cache temizleme scripti
+- `clear-cache.php` - Cache clearing script
   - Application cache clearing
   - Config cache clearing
   - Route cache clearing
@@ -41,28 +41,28 @@ Bu sürüm production kullanımı için hazır!
   - Compiled classes clearing
   - Event cache clearing
   
-- `refresh-cache.php` - Cache yenileme scripti
+- `refresh-cache.php` - Cache refresh script
   - 2-step process (clear + create)
   - Production optimization
   - Event cache support
 
-#### Dokümantasyon
-- Ana README.md
-- Detaylı script dokümantasyonları (4 adet)
+#### Documentation
+- Main README.md
+- Detailed script documentation (4 files)
 - CONTRIBUTING.md
 - CHANGELOG.md
 - LICENSE (MIT)
 - SECURITY.md
 - CODE_OF_CONDUCT.md
 
-#### Özellikler
-- 🎨 Profesyonel HTML çıktısı
-- 🔒 Güvenlik kilidi (install.lock)
-- 🐛 Detaylı hata raporlama
-- ✅ Laravel 9+ uyumluluğu
-- ⚡ PHP 8.0+ uyumluluğu
+#### Features
+- 🎨 Professional HTML output
+- 🔒 Security lock (install.lock)
+- 🐛 Detailed error reporting
+- ✅ Laravel 9+ compatibility
+- ⚡ PHP 8.0+ compatibility
 
-### 🔒 Güvenlik
+### 🔒 Security
 - Single-run mechanism (install.lock)
 - No sensitive data storage
 - Secure error handling
@@ -70,49 +70,49 @@ Bu sürüm production kullanımı için hazır!
 
 ## [0.3.0] - 2024-01-10
 
-### ✨ Eklenenler
-- `refresh-cache.php` eklendi
-- Event cache desteği
+### ✨ Added
+- `refresh-cache.php` added
+- Event cache support
 - 2-step cache refresh process
 - Performance comparison documentation
 
-### 📝 Değişiklikler
-- README.md güncellendi
-- Dokümantasyon iyileştirildi
-- Emoji kullanımı standardize edildi
+### 📝 Changed
+- README.md updated
+- Documentation improved
+- Emoji usage standardized
 
-### 🐛 Düzeltmeler
-- Laravel 7 event cache uyumluluk sorunu çözüldü
-- Permission hatası handling iyileştirildi
+### 🐛 Fixed
+- Laravel 7 event cache compatibility issue resolved
+- Permission error handling improved
 
 ## [0.2.0] - 2024-01-05
 
-### ✨ Eklenenler
-- `clear-cache.php` eklendi
-- `update.php` eklendi
-- Detaylı dokümantasyon
-- Hata yönetimi iyileştirildi
+### ✨ Added
+- `clear-cache.php` added
+- `update.php` added
+- Detailed documentation
+- Error handling improved
 
-### 📝 Değişiklikler
-- HTML çıktısı iyileştirildi
-- CSS renk paleti güncellendi
-- Mesajlar daha açık hale getirildi
+### 📝 Changed
+- HTML output improved
+- CSS color palette updated
+- Messages made clearer
 
-### 🐛 Düzeltmeler
-- Storage permission hataları düzeltildi
-- Laravel 8 uyumluluk sorunları çözüldü
+### 🐛 Fixed
+- Storage permission errors fixed
+- Laravel 8 compatibility issues resolved
 
 ## [0.1.0] - 2024-01-01
 
-### 🎉 İlk Sürüm
+### 🎉 Initial Release
 
-### ✨ Eklenenler
-- `install.php` - İlk kurulum scripti
-- Temel HTML çıktısı
-- Artisan komut entegrasyonu
+### ✨ Added
+- `install.php` - Initial installation script
+- Basic HTML output
+- Artisan command integration
 - MIT License
 
-### Özellikler
+### Features
 - Application key generation
 - Storage link creation
 - Migration support
@@ -120,22 +120,22 @@ Bu sürüm production kullanımı için hazır!
 
 ---
 
-## Versiyon Notasyonu
+## Version Notation
 
 - **MAJOR** (1.x.x): Breaking changes
-- **MINOR** (x.1.x): Yeni özellikler (geriye uyumlu)
-- **PATCH** (x.x.1): Bug fixes (geriye uyumlu)
+- **MINOR** (x.1.x): New features (backward compatible)
+- **PATCH** (x.x.1): Bug fixes (backward compatible)
 
-## Değişiklik Tipleri
+## Change Types
 
-- `Added` - Yeni özellikler
-- `Changed` - Mevcut işlevlerde değişiklikler
-- `Deprecated` - Yakında kaldırılacak özellikler
-- `Removed` - Kaldırılan özellikler
-- `Fixed` - Bug düzeltmeleri
-- `Security` - Güvenlik güncellemeleri
+- `Added` - New features
+- `Changed` - Changes in existing functionality
+- `Deprecated` - Soon-to-be removed features
+- `Removed` - Removed features
+- `Fixed` - Bug fixes
+- `Security` - Security updates
 
-## Linkler
+## Links
 
 [Unreleased]: https://github.com/isousluer/laravel-deployment-scripts/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/isousluer/laravel-deployment-scripts/compare/v0.3.0...v1.0.0
