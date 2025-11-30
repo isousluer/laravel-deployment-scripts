@@ -151,38 +151,35 @@ try {
 
 ### Dokümantasyon Stili
 
-````markdown
-### Dokümantasyon Stili
-
+```markdown
 ## 📝 Başlık
 
 Açıklama metni net ve anlaşılır olmalı.
 
 ### Kod Örnekleri
 
-```bash
 # Her komut için açıklama
 php artisan cache:clear
-```
+
 
 ✅ **İyi Pratikler:**
 - Emoji kullanın
 - Listeler yapın
 - Örnekler verin
 
+
 ## 📝 Commit Mesajları
 
 [Conventional Commits](https://www.conventionalcommits.org/) standardını kullanıyoruz.
 
 ### Format
-````
+
 <type>(<scope>): <subject>
 
 <body>
 
 <footer>
-`````
-``````
+```
 
 
 ### Tipler
