@@ -116,9 +116,9 @@ Script çalıştığında profesyonel bir HTML çıktısı göreceksiniz:
 | Script | Amaç | Kullanım |
 |--------|------|----------|
 | **install.php** | İlk kurulum | Yeni proje |
-| [update.php](link) | Güncelleme + Migration | Deploy sonrası |
-| [clear-cache.php](link) | Cache temizleme | Development |
-| [refresh-cache.php](link) | Cache yenileme | Production |
+| [update.php](UPDATE.tr.md) | Güncelleme + Migration | Deploy sonrası |
+| [clear-cache.php](CLEAR_CACHE.tr.md) | Cache temizleme | Development |
+| [refresh-cache.php](REFRESH_CACHE.tr.md) | Cache yenileme | Production |
 
 ## 📚 Daha Fazla Bilgi
 

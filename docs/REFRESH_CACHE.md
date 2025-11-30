@@ -223,9 +223,9 @@ When the script runs, you'll see:
 
 | Script | Purpose | Environment | Performance |
 |--------|---------|-------------|-------------|
-| [install.php](link) | Initial installation | New project | Optimized |
-| [update.php](link) | Update | Deploy | Optimized |
-| [clear-cache.php](link) | Clearing | Development | Slow |
+| [install.php](INSTALL.md) | Initial installation | New project | Optimized |
+| [update.php](UPDATE.md) | Update | Deploy | Optimized |
+| [clear-cache.php](CLEAR_CACHE.md) | Clearing | Development | Slow |
 | **refresh-cache.php** | Refresh | Production | Fast |
 
 ## 🎓 Deployment Workflow Example

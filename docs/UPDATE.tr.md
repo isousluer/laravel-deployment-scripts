@@ -297,10 +297,10 @@ Schema::table('posts', function (Blueprint $table) {
 
 | Script | Amaç | Kullanım |
 |--------|------|----------|
-| [install.php](install.md) | İlk kurulum | Yeni proje |
+| [install.php](INSTALL.tr.md) | İlk kurulum | Yeni proje |
 | **update.php** | Güncelleme + Migration | Deploy sonrası |
-| [clear-cache.php](clear-cache.md) | Cache temizleme | Development |
-| [refresh-cache.php](refresh-cache.md) | Cache yenileme | Production |
+| [clear-cache.php](CLEAR_CACHE.tr.md) | Cache temizleme | Development |
+| [refresh-cache.php](REFRESH_CACHE.tr.md) | Cache yenileme | Production |
 
 ## 📚 Daha Fazla Bilgi
 

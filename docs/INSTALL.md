@@ -116,9 +116,9 @@ When the script runs, you'll see professional HTML output:
 | Script | Purpose | Usage |
 |--------|---------|-------|
 | **install.php** | Initial installation | New project |
-| [update.php](link) | Update + Migration | After deploy |
-| [clear-cache.php](link) | Cache clearing | Development |
-| [refresh-cache.php](link) | Cache refresh | Production |
+| [update.php](UPDATE.md) | Update + Migration | After deploy |
+| [clear-cache.php](CLEAR_CACHE.md) | Cache clearing | Development |
+| [refresh-cache.php](REFRESH_CACHE.md) | Cache refresh | Production |
 
 ## 📚 More Information
 

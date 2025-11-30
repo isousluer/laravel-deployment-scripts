@@ -223,9 +223,9 @@ Script çalıştığında göreceksiniz:
 
 | Script | Amaç | Ortam | Performans |
 |--------|------|-------|------------|
-| [install.php](link) | İlk kurulum | Yeni proje | Optimize |
-| [update.php](link) | Güncelleme | Deploy | Optimize |
-| [clear-cache.php](link) | Temizleme | Development | Yavaş |
+| [install.php](INSTALL.tr.md) | İlk kurulum | Yeni proje | Optimize |
+| [update.php](UPDATE.tr.md) | Güncelleme | Deploy | Optimize |
+| [clear-cache.php](CLEAR_CACHE.tr.md) | Temizleme | Development | Yavaş |
 | **refresh-cache.php** | Yenileme | Production | Hızlı |
 
 ## 🎓 Deployment Workflow Örneği

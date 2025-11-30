@@ -394,10 +394,10 @@ Cache::remember('users', now()->addHours(24), function () {
 
 | Script | Amaç | Kullanım |
 |--------|------|----------|
-| [install.php](install.md) | İlk kurulum | Yeni proje |
-| [update.php](update.md) | Güncelleme + Migration | Deploy sonrası |
+| [install.php](INSTALL.tr.md) | İlk kurulum | Yeni proje |
+| [update.php](UPDATE.tr.md) | Güncelleme + Migration | Deploy sonrası |
 | **clear-cache.php** | Cache temizleme | Development |
-| [refresh-cache.php](refresh-cache.md) | Cache yenileme | Production |
+| [refresh-cache.php](REFRESH_CACHE.tr.md) | Cache yenileme | Production |
 
 ## 📚 Daha Fazla Bilgi
 

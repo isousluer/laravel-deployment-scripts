@@ -297,10 +297,10 @@ Schema::table('posts', function (Blueprint $table) {
 
 | Script | Purpose | Usage |
 |--------|---------|-------|
-| [install.php](install.md) | Initial installation | New project |
+| [install.php](INSTALL.md) | Initial installation | New project |
 | **update.php** | Update + Migration | After deploy |
-| [clear-cache.php](clear-cache.md) | Cache clearing | Development |
-| [refresh-cache.php](refresh-cache.md) | Cache refresh | Production |
+| [clear-cache.php](CLEAR_CACHE.md) | Cache clearing | Development |
+| [refresh-cache.php](REFRESH_CACHE.md) | Cache refresh | Production |
 
 ## 📚 More Information
 
